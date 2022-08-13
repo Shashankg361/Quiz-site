@@ -35,18 +35,17 @@ form.addEventListener('submit', e =>{
 
     
 });
-/*setTimeout(()=>{
-    alert('done');
-},5000);*/
-/*
-let i=0;
+const popUp = document.querySelector('.popup-warper');
+const closePopUp = document.querySelector('.close-popup');
 
-const timer = setInterval(()=>{
-    console.log('hello');
-    i++;
-    if(i===4){
-        clearInterval(timer);
-    }
-},1000);*/
+setTimeout(()=>
+{
+  popUp.style.display='block';
+},2000);
+
+closePopUp.addEventListener('click',e=>
+{
+  popUp.style.display='none';
+})
 
 
